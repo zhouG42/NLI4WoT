@@ -1,0 +1,12 @@
+what is the current light level according to {deviceNameSrc} ?	{deviceNameTrg}.readProperty('light');
+what is the light intensity from {deviceNameSrc} right now ?	{deviceNameTrg}.readProperty('light');
+how bright is it according to {deviceNameSrc} ?	{deviceNameTrg}.readProperty('light');
+how strong the light feels based on {deviceNameSrc} ?	{deviceNameTrg}.readProperty('light');
+what is current brightness the {deviceNameSrc} showing ?	{deviceNameTrg}.readProperty('light');
+check the light measurement in {deviceNameSrc} .	{deviceNameTrg}.readProperty('light');
+check {deviceNameSrc} light value .	{deviceNameTrg}.readProperty('light');
+show me the light intensity level according to {deviceNameSrc} .	{deviceNameTrg}.readProperty('light');
+show the light value based on {deviceNameSrc} .	{deviceNameTrg}.readProperty('light');
+read the luminosity measurement in {deviceNameSrc} .	{deviceNameTrg}.readProperty('light');
+tell me the light intensity measurement of {deviceNameSrc} .	{deviceNameTrg}.readProperty('light');
+I want to know the luminosity value from {deviceNameSrc} .	{deviceNameTrg}.readProperty('light');

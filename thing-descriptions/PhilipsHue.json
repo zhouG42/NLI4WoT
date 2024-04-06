@@ -1,0 +1,138 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "sbo": "http://example.org/simple-bluetooth-ontology#",
+      "bdo": "http://example.org/binary-data-ontology#",
+      "nl": "http://example.org/natural-language#",
+      "saref":"https://saref.etsi.org/core/"
+    },
+    {
+      "@language": "en"
+    }
+  ],
+  "title": "PhilipsHue",
+  "base": "gatt://{{MacOrWebBluetoothId}}/",
+  "description": "A PhilipsHue smart light bulb.",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "@type": ["tm:ThingModel"],
+  "security": [
+    "nosec_sc"
+  ],
+  "sbo:hasGAPRole": "sbo:Peripheral",
+  "sbo:isConnectable": true,
+
+  "properties": {
+    "power": {
+      "type": "integer",
+      "observable": false,
+      "readOnly": false,
+      "writeOnly": false,
+      "minimum": 0,
+      "maximum": 1,
+      "bdo:bytelength": 1,
+      "template": "./templates/powerTemplate.tsv",
+      "parameter": "../parameters/powerlow.csv",
+      "command":"switch on power",
+      "description": "The current power status of the bulb",
+      "forms": [
+        {
+          "href": "./932c32bd-0000-47a2-835a-a8d455b859dd/932c32bd-0002-47a2-835a-a8d455b859dd",
+          "op": "readProperty",
+          "intent": "readPropertyPower",
+          "nl:corpus": "what is the power state of philipshue?",
+          "sbo:methodName": "sbo:read",
+          "contentType": "application/x.binary-data-stream"
+        },
+        {
+          "href": "./932c32bd-0000-47a2-835a-a8d455b859dd/932c32bd-0002-47a2-835a-a8d455b859dd",
+          "op": "writeProperty",
+          "intent": "writePropertyPower",
+          "slot": "powerValue",
+          "nl:corpus": "turn ?src_param the philipshue.",
+          "sbo:methodName": "sbo:write",
+          "contentType": "application/x.binary-data-stream"
+        }
+      ]
+    },
+    "colour": {
+      "type": "object",
+      "format": "rgb",
+
+      "observable": false,
+      "readOnly": false,
+      "writeOnly": true,
+      "template": "./templates/colorTemplate.tsv",
+      "parameter": "../parameters/colourlow.csv",
+      "description": "The colour of the LED light.",
+
+      "bdo:pattern": "0F{red}{blue}{green}",
+      "bdo:variables": {
+        "red": {
+          "type": "integer",
+          "bdo:bytelength": 1,
+          "minimum": 0,
+          "maximum": 255,
+          "description": "Red value."
+        },
+        "green": {
+          "type": "integer",
+          "bdo:bytelength": 1,
+          "minimum": 0,
+          "maximum": 255,
+          "description": "Green value."
+        },
+        "blue": {
+          "type": "integer",
+          "bdo:bytelength": 1,
+          "minimum": 0,
+          "maximum": 255,
+          "description": "Blue value."
+        }
+      },
+      "forms": [
+        {
+          "href": "./932c32bd-0000-47a2-835a-a8d455b859dd/932c32bd-0005-47a2-835a-a8d455b859dd",
+          "op": "writeProperty",
+          "intent":"writePropertyColor",
+          "slot": "colorValue",
+          "nl:corpus": "Set color of philipshue to ?src_param",
+          "sbo:methodName": "sbo:write",
+          "contentType": "application/x.binary-data-stream"
+        }
+      ]
+    }
+  },
+  "actions":{
+    "dim": {
+      "input":{
+        "type": "integer",
+        "observable": false,
+        "readOnly": false,
+        "writeOnly": false,
+        "minimum": 1,
+        "maximum": 255,
+        "bdo:bytelength": 1
+      },
+      "template": "./templates/dimTemplate.tsv",
+      "parameter": "../parameters/brightnesslow.csv",
+      "description": "Reduce the brightness value of the bulb",
+      "forms": [
+        {
+          "href": "./932c32bd-0000-47a2-835a-a8d455b859dd/932c32bd-0003-47a2-835a-a8d455b859dd",
+          "op": "invokeAction",
+          "intent": "invokeActionDim",
+          "slot": "dimValue",
+          "nl:corpus": "Dim the philipshue to ?src_param of the brightness",
+          "sbo:methodName": "sbo:write",
+          "contentType": "application/x.binary-data-stream"
+        }
+      ]
+    }
+  }
+}

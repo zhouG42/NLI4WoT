@@ -1,0 +1,12 @@
+what is {deviceNameSrc}'s power state ?	{deviceNameTrg}.readProperty('power');
+tell me the power status of {deviceNameSrc} .	{deviceNameTrg}.readProperty('power');
+I want to know the power state of {deviceNameSrc} .	{deviceNameTrg}.readProperty('power');
+is {deviceNameSrc} power on .	{deviceNameTrg}.readProperty('power');
+is {deviceNameSrc} on .	{deviceNameTrg}.readProperty('power');
+is {deviceNameSrc} power off .	{deviceNameTrg}.readProperty('power');
+is {deviceNameSrc} off .	{deviceNameTrg}.readProperty('power');
+check current power state of {deviceNameSrc} .	{deviceNameTrg}.readProperty('power');
+check power of {deviceNameSrc} .	{deviceNameTrg}.readProperty('power');
+check whether the {deviceNameSrc} is on or off .	{deviceNameTrg}.readProperty('power');
+verify current power state of {deviceNameSrc} .	{deviceNameTrg}.readProperty('power');
+verify {deviceNameSrc} is on or off .	{deviceNameTrg}.readProperty('power');

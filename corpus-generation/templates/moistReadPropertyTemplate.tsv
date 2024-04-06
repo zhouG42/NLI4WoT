@@ -1,0 +1,13 @@
+what is the current moisture level of {deviceNameSrc} ?	{deviceNameTrg}.readProperty('moisture');
+what is the moisture value in {deviceNameSrc} right now ?	{deviceNameTrg}.readProperty('moisture');
+how moist is it according to {deviceNameSrc} ?	{deviceNameTrg}.readProperty('moisture');
+how moist it feels based on {deviceNameSrc} ?	{deviceNameTrg}.readProperty('moisture');
+what is moisture value the {deviceNameSrc} showing ?	{deviceNameTrg}.readProperty('moisture');
+check the moisture measurement in {deviceNameSrc} .	{deviceNameTrg}.readProperty('moisture');
+check {deviceNameSrc} moisture value .	{deviceNameTrg}.readProperty('moisture');
+show me the moisture intensity level according to {deviceNameSrc} .	{deviceNameTrg}.readProperty('moisture');
+show the moisture value based on {deviceNameSrc} .	{deviceNameTrg}.readProperty('moisture');
+read the moisture measurement in {deviceNameSrc} .	{deviceNameTrg}.readProperty('moisture');
+tell me the moisture measurement of {deviceNameSrc} .	{deviceNameTrg}.readProperty('moisture');
+I want to know the moisture of {deviceNameSrc} .	{deviceNameTrg}.readProperty('moisture');
+

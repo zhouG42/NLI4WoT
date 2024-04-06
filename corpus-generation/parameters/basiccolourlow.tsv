@@ -1,0 +1,17 @@
+Name	Hex	RGB
+white	#FFFFFF	{red:255, green:255, blue:255}
+silver	#C0C0C0	{red:192, green:192, blue:192}
+gray	#808080	{red:128, green:128, blue:128}
+black	#000000	{red:0, green:0, blue:0}
+red	#FF0000	{red:255, green:0, blue:0}
+maroon	#800000	{red:128, green:0, blue:0}
+yellow	#FFFF00	{red:255, green:255, blue:0}
+olive	#808000	{red:128, green:128, blue:0}
+lime	#00FF00	{red:0, green:255, blue:0}
+green	#008000	{red:0, green:128, blue:0} 
+aqua	#00FFFF	{red:0, green:255 blue:255}
+teal	#008080	{red:0, green:128, blue:128} 
+blue	#0000FF	{red:0, green:0, blue:255}
+navy	#000080	{red:0, green:0, blue:128}
+fuchsia	#FF00FF	{red:255, green:0, blue:255}
+purple	#800080	{red:128, green:0, blue:128}

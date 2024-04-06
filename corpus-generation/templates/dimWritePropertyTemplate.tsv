@@ -1,0 +1,12 @@
+dim {deviceNameSrc} to {brightness_src} brightness .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+dim brightness of {deviceNameSrc} to {brightness_src} .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+adjust brightness of {deviceNameSrc} slowly to {brightness_src} .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+adjust {deviceNameSrc}'s brightness gradually to {brightness_src} brightness .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+reduce brightness of {deviceNameSrc} gradually to {brightness_src} .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+reduce {deviceNameSrc} slowly to {brightness_src} brightness .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+decrease brightness of {deviceNameSrc} slowly to {brightness_src} .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+decrease {deviceNameSrc} gradually to {brightness_src} brightness .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+lower brightness of {deviceNameSrc} gradually to {brightness_src} .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+lower {deviceNameSrc} slowly to {brightness_src} brightness .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+fade brightness of {deviceNameSrc} slowly to {brightness_src} .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});
+fade {deviceNameSrc} gradually to {brightness_src} brightness .	{deviceNameTrg}.invokeAction('dim', {brightness_trg});

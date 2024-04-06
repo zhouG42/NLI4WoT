@@ -1,0 +1,12 @@
+switch {deviceNameSrc} color to {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg});
+switch color of {deviceNameSrc} to {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg});
+set {deviceNameSrc} color to {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg});
+set color of {deviceNameSrc} to {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg});
+update {deviceNameSrc} color to {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg});
+adjust color of {deviceNameSrc} to {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg});
+modify {deviceNameSrc} color to {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg})
+convert color of {deviceNameSrc} to {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg});
+change {deviceNameSrc} color to {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg});
+make color of {deviceNameSrc} to {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg});
+I want {color_src} color on {deviceNameSrc} .	{deviceNameTrg}.writeProperty('color', {color_trg});
+I want {deviceNameSrc} color be {color_src} .	{deviceNameTrg}.writeProperty('color', {color_trg});

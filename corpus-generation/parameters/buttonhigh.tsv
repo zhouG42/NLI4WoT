@@ -1,0 +1,19 @@
+button_src	button_trg
+zero	0
+one	1
+two	2
+three	3
+four	4
+five	5
+top left	0
+top middle	1
+top right	2
+bottom left	3
+bottom middle	4
+bottom right	5
+up left	0
+up middle	1
+up right	2
+down left	3
+down middle	4
+down right	5

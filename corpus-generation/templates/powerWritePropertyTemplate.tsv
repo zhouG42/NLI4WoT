@@ -1,0 +1,12 @@
+switch {power_src} {deviceNameSrc} .	{deviceNameTrg}.writeProperty('power', {power_trg});
+switch {deviceNameSrc} to {power_src} state .	{deviceNameTrg}.writeProperty('power', {power_trg});
+switch {power_src} power of {deviceNameSrc} .	{deviceNameTrg}.writeProperty('power', {power_trg});
+turn {power_src} {deviceNameSrc} .	{deviceNameTrg}.writeProperty('power', {power_trg});
+turn {power_src} power of {deviceNameSrc} .	{deviceNameTrg}.writeProperty('power', {power_trg});
+turn power {power_src} of {deviceNameSrc} .	{deviceNameTrg}.writeProperty('power', {power_trg});
+set power {power_src} {deviceNameSrc} .	{deviceNameTrg}.writeProperty('power', {power_trg});
+{deviceNameSrc} power {power_src} .	{deviceNameTrg}.writeProperty('power', {power_trg});
+activate {deviceNameSrc} .	{deviceNameTrg}.writeProperty('power', on);
+deactivate {deviceNameSrc} .	{deviceNameTrg}.writeProperty('power', off);
+power up {deviceNameSrc} .	{deviceNameTrg}.writeProperty('power', on);
+power down {deviceNameSrc} .	{deviceNameTrg}.writeProperty('power', off);

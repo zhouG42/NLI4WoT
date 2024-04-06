@@ -1,0 +1,12 @@
+what is {deviceNameSrc}'s brightness level ?	{deviceNameTrg}.readProperty('brightness');
+What's the luminosity of the {deviceNameSrc} ?	{deviceNameTrg}.readProperty('brightness');
+what brightness level is in {deviceNameSrc} ?	{deviceNameTrg}.readProperty('brightness');
+how bright is {deviceNameSrc} ?	{deviceNameTrg}.readProperty('brightness');
+how much is the brightness of {deviceNameSrc} ?	{deviceNameTrg}.readProperty('brightness');
+how strong is the brightness of {deviceNameSrc} ?	{deviceNameTrg}.readProperty('brightness');
+tell me the brightness of {deviceNameSrc} .	{deviceNameTrg}.readProperty('brightness');
+tell me the illumination level of {deviceNameSrc} .	{deviceNameTrg}.readProperty('brightness');
+I want to know the brightness of {deviceNameSrc} .	{deviceNameTrg}.readProperty('brightness');
+check current brightness level of {deviceNameSrc} .	{deviceNameTrg}.readProperty('brightness');
+check brightness of {deviceNameSrc} .	{deviceNameTrg}.readProperty('brightness');
+verify current brightness level of {deviceNameSrc} .	{deviceNameTrg}.readProperty('brightness');

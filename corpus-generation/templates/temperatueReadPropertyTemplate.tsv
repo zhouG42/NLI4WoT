@@ -1,0 +1,13 @@
+what is the current temperature of {deviceNameSrc} ?	{deviceNameTrg}.readProperty('temperature');
+what is the temperature value in {deviceNameSrc} right now ?	{deviceNameTrg}.readProperty('temperature');
+how warm is it based on {deviceNameSrc} ?	{deviceNameTrg}.readProperty('temperature');
+how cold is it according to {deviceNameSrc} ?	{deviceNameTrg}.readProperty('temperature');
+what is temperature value the {deviceNameSrc} showing ?	{deviceNameTrg}.readProperty('temperature');
+check the temperature measurement in {deviceNameSrc} .	{deviceNameTrg}.readProperty('temperature');
+check {deviceNameSrc} temperature value .	{deviceNameTrg}.readProperty('temperature');
+show me the temperature value according to {deviceNameSrc} .	{deviceNameTrg}.readProperty('temperature');
+show the temperature measurement based on {deviceNameSrc} .	{deviceNameTrg}.readProperty('temperature');
+read the temperature measurement in {deviceNameSrc} .	{deviceNameTrg}.readProperty('temperature');
+tell me the temperature measurement of {deviceNameSrc} .	{deviceNameTrg}.readProperty('temperature');
+I want to know the temperature of {deviceNameSrc} .	{deviceNameTrg}.readProperty('temperature');
+
